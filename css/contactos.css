@@ -1,0 +1,61 @@
+/* Añadir esta regla en tu archivo style.css, header.css o muralismo.css */
+body {
+    color: black texto;
+    background-color:rgb(212, 248, 253);
+}
+
+body{
+    background-color: rgb(246, 232, 255);
+}
+.contenedor {
+    margin-top: 20px;
+    max-width: 1000px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se muevan a una nueva línea si el contenedor no es lo suficientemente ancho */
+    background-color:rgb(223, 230, 252);
+    border-radius: 0.5rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: #ffffff 1px 1px 10px 1px;
+}
+.mosaico {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espacio entre las imágenes */
+}
+.mosaico img {
+    width: calc(33.333% - 10.666px); /* Ancho de 3 imágenes por fila menos el gap */
+    box-sizing: border-box;
+}
+@media (max-width: 992px) {
+    .mosaico img {
+        width: calc(50% - 8px); /* Ancho de 2 imágenes por fila menos el gap */
+    }
+}
+@media (max-width: 600px) {
+    .mosaico img {
+        width: 100%; /* Ancho de 1 imagen por fila */
+    }
+}
+.contenido{
+    background-color: rgb(233, 233, 233);
+    color: black;
+    padding: 2%;
+}
+.contenido h1{
+    margin-top: 30px;
+    text-align: start;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contenido h2{
+    margin-top: 30px;
+    text-align: start;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
